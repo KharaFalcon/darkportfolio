@@ -39,20 +39,20 @@
             hsl(0, 0%, 25%) 0%,
             hsla(0, 0%, 25%, 0) 50%);
     --text-gradient-yellow: linear-gradient(to right,
-            hsl(45, 100%, 72%),
-            hsl(35, 100%, 68%));
+            hsl(112, 29%, 61%),
+            hsl(117, 66%, 55%));
 
     /* solid */
 
-    --jet: hsl(0, 0%, 22%);
-    --onyx: hsl(240, 1%, 17%);
-    --eerie-black-1: hsl(240, 2%, 13%);
-    --eerie-black-2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
+    --jet: hsl(165,19%,40%);
+    --onyx: hsl(165, 19%, 40%);
+    --eerie-black-1: hsl(186, 21, 26);
+    --eerie-black-2: hsl(186, 21%, 26%);
+    --smoky-black: hsl(201,20%,23%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(45, 100%, 72%);
-    --vegas-gold: hsl(45, 54%, 58%);
+    --orange-yellow-crayola: hsl(133, 45%, 48%);
+    --vegas-gold: hsl(97,13%,80%);
     --light-gray: hsl(0, 0%, 84%);
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -360,9 +360,11 @@ main {
     gap: 15px;
 }
 
-.avatar-box {
-    background: var(--bg-gradient-onyx);
-    border-radius: 20px;
+
+
+#profilePic {
+    border-radius: 150px;
+
 }
 
 .info-content .name {
@@ -1618,7 +1620,6 @@ textarea.form-input::-webkit-resizer {
 
     .testimonials-item-title {
         margin-bottom: 10px;
-        margin-left: 95px;
     }
 
     .testimonials-text {
