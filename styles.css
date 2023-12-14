@@ -27,8 +27,8 @@
             hsl(240, 1%, 25%) 3%,
             hsl(0, 0%, 19%) 97%);
     --bg-gradient-jet: linear-gradient(to bottom right,
-            hsla(240, 1%, 18%, 0.251) 0%,
-            hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+            hsla(267,52%,19%, 0.251) 0%,
+            hsla(240, 15%, 40%, 0) 100%), hsl(273, 19%, 28%);
     --bg-gradient-yellow-1: linear-gradient(to bottom right,
             hsl(45, 100%, 71%) 0%,
             hsla(36, 100%, 69%, 0) 50%);
@@ -39,19 +39,19 @@
             hsl(0, 0%, 25%) 0%,
             hsla(0, 0%, 25%, 0) 50%);
     --text-gradient-yellow: linear-gradient(to right,
-            hsl(112, 29%, 61%),
-            hsl(117, 66%, 55%));
+            hsl(290, 60%, 43%),
+            hsl(313, 66%, 55%));
 
     /* solid */
 
-    --jet: hsl(165,19%,40%);
-    --onyx: hsl(165, 19%, 40%);
-    --eerie-black-1: hsl(186, 21, 26);
-    --eerie-black-2: hsl(186, 21%, 26%);
+    --jet: hsl(275, 65%, 19%);
+    --onyx: hsl(266,49%,63%);
+    --eerie-black-1: hsl(266, 52%, 35%);
+    --eerie-black-2: hsl(266, 16%, 28%);
     --smoky-black: hsl(201,20%,23%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
-    --orange-yellow-crayola: hsl(133, 45%, 48%);
+    --orange-yellow-crayola: hsl(298, 99%, 56%);
     --vegas-gold: hsl(97,13%,80%);
     --light-gray: hsl(0, 0%, 84%);
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -162,7 +162,7 @@ html {
 }
 
 body {
-    background: var(--smoky-black);
+    background: url(img/crystalBackground.png);
 }
 
 /*-----------------------------------*\
@@ -819,8 +819,13 @@ main {
 .btn {
     margin: 10px;
     padding: 20px 50px;
-    background-color: rgb(103, 176, 103);
+    background-color: rgb(147, 46, 156);
     border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(240, 136, 249);
+    color: white;
 }
 .article-title {
     margin-bottom: 30px;
@@ -1143,7 +1148,7 @@ main {
     font-size: var(--fs-6);
     font-weight: var(--fw-400);
     padding: 13px 20px;
-    border: 1px solid var(--jet);
+    border: 2px solid rgb(181, 162, 162);
     border-radius: 14px;
     outline: none;
 }
