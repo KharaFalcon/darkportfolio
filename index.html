@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <!--- #MAIN-->
@@ -468,6 +469,20 @@
           </div>
 
           <ul class="project-list">
+             <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/KharaFalcon/moodBridge">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="img/moodBridgeLogin.png" alt="MoodBridgeImg" loading="lazy">
+                </figure>
+                <h3 class="project-title">MoodBridge</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://users.aber.ac.uk/kmf3/Projects/FishinGold/Fallingstuff.html">
@@ -579,7 +594,7 @@
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="javascript:sendmail()" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
