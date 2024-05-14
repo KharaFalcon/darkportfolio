@@ -591,25 +591,25 @@
           <h2 class="h2 article-title">Lets Chat!</h2>
         </header>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+      <section class="contact-form">
+  <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="javascript:sendmail()" method="POST" class="form" data-form>
-
+          <form action="contact_page.php" method="POST">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <input type="text" class="form-input" name="name" id="name" placeholder="name">
+            <input type="email" class="form-input" name="email" id="email" placeholder="email">
+            <input type="text" class="form-input" name="subject" id="subject" placeholder="subject">
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+            <textarea class="form-input" name="message" cols="30" rows="10" placeholder="subject"></textarea>
+           <button class="form-btn" type="submit">
+            <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-          </form>
-        </section>
+
+        </form>
+
+</section>
+<script src="https://apis.google.com/js/api.js"></script>
 
           <ul class="social-list">
 
