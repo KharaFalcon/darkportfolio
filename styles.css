@@ -609,6 +609,7 @@ main {
 
 .testimonials-item-title {
     margin-bottom: 7px;
+    color: white;
 }
 
 .testimonials-text {
@@ -1456,8 +1457,8 @@ textarea.form-input::-webkit-resizer {
     }
 
     .testimonials-text {
-        line-clamp: 2;
-        -webkit-line-clamp: 2;
+        line-clamp: 25;
+        -webkit-line-clamp: 25;
     }
 
     /* testimonials modal */
