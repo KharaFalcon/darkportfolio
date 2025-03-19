@@ -67,7 +67,7 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Age</p>
-              <time datetime="1982-06-23">22</time>
+              <time datetime="1982-06-23">23</time>
             </div>
           </li>
           <li class="contact-item">
@@ -137,13 +137,10 @@
       </nav>
 
 
-
-
-
       <!--- #ABOUT -->
       <article class="home  active" data-page="home">
         <header>
-          <h2 class="h2 article-title">Frontend Developer</h2>
+          <h2 class="h2 article-title">Software Developer</h2>
         </header>
 
         <section class="about-text">
@@ -209,6 +206,45 @@
         </section>
 
        
+   <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Zuzanna Ziolek
+~ Project Manager</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  "Khara was one of the most hardworking people on the team with the task of developing the front end of the program. Khara was in charge of the design of the chess tutor and created the chess pieces, chess board and any icons. Despite facing a lot of issues with the implementation of the board, she would always persevere and complete great work each week. When she was introduced to new members of the implementation, she was kind and patient when explaining the functionality and anything which needed fixing. Khara was another team member that formed close connections with the rest of the team. Even with her big workload she was always open to helping the rest of the team with more technical parts of the documentation.""
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Chris Percival - Team Lead</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    “Khara has been a hugely positive influence on our team and will be missed. Since day 1 she has shown an excellent attitude and eagerness to learn. Her technical skills in a variety of subjects have improved significantly in a short time as has her knowledge of the business.Khara has proven very capable of working and learning independently, while never being shy to ask for help if needed. She is an excellent team player, always keeping others informed and sharing her opinion while being receptive to feedback.”
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
 
 
         <!--- testimonials modal-->
@@ -221,6 +257,14 @@
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
 
             <div class="modal-content">
 
@@ -316,13 +360,13 @@
       <button type="button" class="btn">Java</button>
        <button type="button" class="btn">PHP</button>
         <button type="button" class="btn">Vue</button>
-         <button type="button" class="btn">Bootstrap</button>
+         <button type="button" class="btn">Swift</button>
       <br />
        <button type="button" class="btn">SQL</button>
        <button type="button" class="btn">Git</button>
       <button type="button" class="btn">Figma</button>
       <button type="button" class="btn">Blender</button>
-      <button type="button" class="btn">Gimp</button>
+      <button type="button" class="btn">Kotlin</button>
     </section>
 
         <section class="timeline">
@@ -349,7 +393,8 @@
 						Software Engineering,
 						Robotics and Embedded Systems,
 						Algorithms and Data Structures,
-						Programming for the web
+						Programming for the web,
+            Mobile Development with Android
               </p>
             </li>
 
@@ -385,6 +430,7 @@
 
               <p class="timeline-text">
               Industrial placement year in Web development. 
+              Implemented both front-end and back-end development in an agile environment using Microsoft development stack. Using RESTful web APIs using C# ASP.NET.
               </p>
 
             </li>
@@ -433,6 +479,9 @@
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
             </li>
+            <li class="filter-item">
+              <button data-filter-btn>Mobile development</button>
+            </li>
 
           </ul>
 
@@ -469,6 +518,37 @@
           </div>
 
           <ul class="project-list">
+               <li class="project-item  active" data-filter-item data-category="mobile development">
+              <a href="https://github.com/KharaFalcon/IntellectIsland">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="img/intellectisland.png" alt="Intellect Island Logo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Itellect Island - Quiz App</h3>
+                <p class="project-category">Mobile development</p>
+              </a>
+            </li>
+
+               <li class="project-item  active" data-filter-item data-category="mobile development">
+              <a href="https://github.com/KharaFalcon/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="img/covoExample.png" alt="Covoyage Logo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Covoyage - Connecting Solo Travellers</h3>
+                <p class="project-category">Mobile development</p>
+              </a>
+            </li>
              <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/KharaFalcon/moodBridge">
 
@@ -534,21 +614,6 @@
 
               </a>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/KharaFalcon/Jquery-car-race-game">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="img/carGame.png" alt="Car Game" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">JQuery Car Race Game</h3>
-                <p class="project-category">Web development</p>
-              </a>
-            </li>
 
             <li class="project-item  active" data-filter-item data-category="animation">
               <a href="https://github.com/KharaFalcon/animatedSolar">
@@ -563,22 +628,6 @@
                 <h3 class="project-title">Solar System Animation</h3>
 
                 <p class="project-category">Animation</p>
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/KharaFalcon/tipCalculator">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="img/tipCalc.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Tip Calculator</h3>
-                <p class="project-category">Web development</p>
               </a>
             </li>
             

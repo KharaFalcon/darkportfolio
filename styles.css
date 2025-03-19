@@ -1,25 +1,6 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
-
-    /**
-   * colors
-   */
 
     /* gradient */
 
@@ -55,10 +36,6 @@
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-
-    /**
-   * typography
-   */
 
     /* font-family */
     --ff-poppins: monospace;
@@ -164,9 +141,6 @@ body {
     background-color: #386641;
 }
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .sidebar,
 article {
@@ -211,6 +185,7 @@ article {
 
 .icon-box ion-icon {
     --ionicon-stroke-width: 35px;
+    color: white;
 }
 
 article {
