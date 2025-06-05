@@ -38,7 +38,7 @@
 
 
     /* font-family */
-    --ff-poppins: monospace;
+--ff-roboto: 'Roboto', sans-serif;
 
     /* font-size */
     --fs-1: 24px;
@@ -134,7 +134,7 @@ textarea {
 }
 
 html {
-    font-family: var(--ff-poppins);
+    font-family: var(--ff-roboto);
 }
 
 body {
