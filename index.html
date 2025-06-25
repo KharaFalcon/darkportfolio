@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="styles.css">
 
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -20,9 +17,7 @@
   
 </head>
 <body>
-  <!--- #MAIN-->
   <main>
-    <!--- #SIDEBAR-->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
 
@@ -108,11 +103,7 @@
     </aside>
 
 
-    <!--- #main-content-->
-
     <div class="main-content">
-      <!---#NAVBAR-->
-
       <nav class="navbar">
 
         <ul class="navbar-list">
@@ -138,7 +129,6 @@
       </nav>
 
 
-      <!--- #ABOUT -->
       <article class="home  active" data-page="home">
         <header>
           <h2 class="h2 article-title">Software Developer</h2>
@@ -160,8 +150,6 @@
         <p>Actively promoting women in STEM through my Instagram platform and contributing to inclusivity initiatives within my university’s Computer Science department.</p>
         </section>
 
-
-        <!--- service -->
 
         <section class="service">
 
@@ -218,11 +206,7 @@
         </section>
 
        
-   <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
+   <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -259,7 +243,6 @@
         </section>
 
 
-        <!--- testimonials modal-->
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
@@ -298,7 +281,6 @@
         </div>
       </article>
 
-      <!-- #CV -->
       <article class="resume" data-page="resume">
 
         <header>
@@ -466,8 +448,6 @@
         </section>
       </article>
 
-      <!--- #PORTFOLIO -->
-
       <article class="portfolio" data-page="portfolio">
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -544,6 +524,14 @@
 
                 <h3 class="project-title">Itellect Island - Quiz App</h3>
                 <p class="project-category">Mobile development</p>
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>Multi-Choice Quiz Application</p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+                      <div class="filter-chips">
+  <button class="chip">Kotlin</button>
+  <button class="chip">Jetpack Compose</button>
+</div>
               </a>
             </li>
 
@@ -560,7 +548,26 @@
 
                 <h3 class="project-title">Covoyage - Connecting Solo Travellers</h3>
                 <p class="project-category">Mobile development</p>
-              </a>
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>CoVoyage: Solo Travel, Safe Connections.
+
+Secure Profiles: Verified identities for trustworthy interactions.
+
+Interest Matching: Connects users based on shared hobbies and travel styles.
+
+Encrypted Chat: Private, real-time communication.
+
+Itinerary Management: Integrated with Google Maps for shared plans.
+
+Safety First: Identity verification and end-to-end encryption..</p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+               <div class="filter-chips">
+  <button class="chip">Kotlin</button>
+  <button class="chip">Jetpack Compose</button>
+  <button class="chip">Firebase</button>
+  <button class="chip">Google Maps API</button>
+</div>
             </li>
              <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/KharaFalcon/moodBridge">
@@ -574,11 +581,21 @@
                 </figure>
                 <h3 class="project-title">MoodBridge</h3>
                 <p class="project-category">Web development</p>
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>This is a web app that allows users to track their daily emotions, activities, and notes, and will eventually enable connectivity with a partner for mood sharing and analysis.</p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+                      <div class="filter-chips">
+  <button class="chip">HTML5</button>
+  <button class="chip">Javascript</button>
+  <button class="chip">PHP</button>
+  <button class="chip">ChartJs</button>
+</div>
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://users.aber.ac.uk/kmf3/Projects/FishinGold/Fallingstuff.html">
+              <a href="https://kharafalcon.github.io/Html5-canvas-game/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -589,6 +606,17 @@
                 </figure>
                 <h3 class="project-title">Fishin for Gold</h3>
                 <p class="project-category">Web development</p>
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>A horizontally-scrolling ocean-themed game where players avoid sharks and collect treasure, featuring persistent leaderboard data.</p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+                    <div class="filter-chips">
+                   <button class="chip">HTML5 Canvas</button>
+  <button class="chip">CSS3</button>
+    <button class="chip">Javascript</button>
+  <button class="chip">PHP</button>
+  <button class="chip">MySQL</button>
+                 </div>
               </a>
             </li>
 
@@ -606,7 +634,13 @@
                 <h3 class="project-title">Autumn, Earthy Visual Studio Code Theme</h3>
 
                 <p class="project-category">Alternative</p>
-
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>Personalise Theme for Visual Studio Code</p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+                    <div class="filter-chips">
+  <button class="chip">Visual Studio Code Theme</button>
+</div>
               </a>
             </li>
 
@@ -624,7 +658,14 @@
                 <h3 class="project-title">The Firebreather Fresher</h3>
 
                 <p class="project-category">Animation</p>
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>Blender 3D Dragon animation for Aberyswyth </p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+                   <div class="filter-chips">
+  <button class="chip">Blender </button>
 
+</div>
               </a>
 
             
@@ -641,13 +682,22 @@
 
                 <h3 class="project-title">The Vaults</h3>
                 <p class="project-category">Web development</p>
+                <div class="project-description">
+                    <p class="project-explanation" data-full-explanation>Welcome to the vaults. In this game the vaults are having issues with the power source thanks to something mysterious. Without the power and light, the crime and mysteries are at an all time high. You are trapped. The aim of the game is to restore the power and escape.</p>
+                    <button class="read-more-btn" data-toggle-btn>Read More</button>
+                </div>
+                     <div class="filter-chips">
+  <button class="chip">HTML5</button>
+  <button class="chip">CSS</button>
+  <button class="chip">JavaScript</button>
+  <button class="chip">SpriteSheet</button>
+</div>
               </a>
             </li>
           </ul>
         </section>
       </article>
 
-      <!--- #CONTACT -->
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Lets Chat!</h2>
@@ -697,14 +747,8 @@
     </div>
   </main>
 
-  <!--
-    - custom js link
-  -->
   <script src="script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

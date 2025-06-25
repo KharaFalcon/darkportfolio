@@ -1,5 +1,3 @@
-
-
 :root {
 
     /* gradient */
@@ -24,21 +22,21 @@
     /* solid */
 
     --jet: hsl(275, 65%, 19%);
-    --onyx: hsl(266,49%,63%);
-    --eerie-black-1:#bc4749;
+    --onyx: hsl(266, 49%, 63%);
+    --eerie-black-1: #bc4749;
     --eerie-black-2: hsl(266, 16%, 28%);
-    --smoky-black: hsl(201,20%,23%);
+    --smoky-black: hsl(201, 20%, 23%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
     --orange-yellow-crayola: #bc4749;
-    --vegas-gold: hsl(97,13%,80%);
+    --vegas-gold: hsl(97, 13%, 80%);
     --light-gray: hsl(0, 0%, 84%);
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
 
 
     /* font-family */
---ff-roboto: 'Roboto', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
 
     /* font-size */
     --fs-1: 24px;
@@ -198,8 +196,13 @@ article.active {
 }
 
 @keyframes fade {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .h2,
@@ -348,7 +351,7 @@ main {
     right: -15px;
     border-radius: 0 15px;
     font-size: 13px;
-    color:white;
+    color: white;
     background: var(--border-gradient-onyx);
     padding: 10px;
     box-shadow: var(--shadow-2);
@@ -780,6 +783,7 @@ main {
 .clients-item img:hover {
     filter: grayscale(0);
 }
+
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -790,6 +794,7 @@ main {
     justify-content: center;
     margin-bottom: 60px;
 }
+
 .btn {
     margin: 10px;
     padding: 20px 50px;
@@ -801,6 +806,7 @@ main {
     background-color: #bc4749;
     color: white;
 }
+
 .article-title {
     margin-bottom: 30px;
 }
@@ -841,7 +847,7 @@ main {
 }
 
 .timeline-list span {
-    color:black;
+    color: black;
     font-weight: var(--fw-400);
     line-height: 1.6;
 }
@@ -986,6 +992,11 @@ main {
     --eerie-black-2: hsl(240, 2%, 20%);
 }
 
+.select-item button.active {
+    color: var(--orange-yellow-crayola);
+    /* Existing active color */
+}
+
 .project-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -1088,13 +1099,71 @@ main {
     font-size: var(--fs-5);
     font-weight: var(--fw-400);
     text-transform: capitalize;
-    line-height: 1.3; 
+    line-height: 1.3;
 }
 
 .project-category {
     color: black;
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
+}
+
+/* New CSS for Project Description Expansion */
+.project-description {
+    position: relative;
+    padding-bottom: 25px;
+    /* Space for the button */
+}
+
+.project-explanation {
+    max-height: 50px;
+    /* Adjust as needed for initial visible text */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    color: var(--smoky-black);
+    /* Match existing text color */
+    font-size: var(--fs-6);
+    /* Match existing text size */
+    font-weight: var(--fw-400);
+    /* Match existing font weight */
+    line-height: 1.6;
+    /* Match existing line height */
+    margin-bottom: 10px;
+    /* Add some space */
+}
+
+.project-explanation.expanded {
+    max-height: 500px;
+    /* A large enough value to show full text */
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--orange-yellow-crayola);
+    /* Use an existing accent color */
+    cursor: pointer;
+    font-size: var(--fs-7);
+    font-weight: var(--fw-500);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    transition: color var(--transition-1);
+}
+
+.read-more-btn:hover {
+    color: var(--light-gray-70);
+}
+
+.project-skills {
+    margin-left: 10px;
+    color: var(--orange-yellow-crayola);
+    /* Highlight color */
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    margin-top: 5px;
+    /* Space between explanation and skills */
 }
 
 
@@ -1205,10 +1274,32 @@ textarea.form-input::-webkit-resizer {
     background: var(--bg-gradient-jet);
 }
 
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+}
 
+.chip {
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
+.chip:hover {
+    background-color: #e0e0e0;
+}
 
-
+.chip.selected {
+    background-color: #6200ea;
+    color: white;
+    bord
+}
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
